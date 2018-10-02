@@ -21,6 +21,16 @@ RCT_EXPORT_MODULE()
     return self;
 }
 
+RCT_EXPORT_METHOD(refreshToken)
+{
+    [BatchPush refreshToken];
+}
+
+RCT_EXPORT_METHOD(requestNotificationAuthorization)
+{
+    [BatchPush requestNotificationAuthorization];
+}
+
 RCT_EXPORT_METHOD(registerForRemoteNotifications)
 {
     [BatchPush registerForRemoteNotifications];

@@ -13,8 +13,6 @@ Pod::Spec.new do |s|
   s.source_files  = "*.{h,m}"
   s.requires_arc = true
 
-
   s.dependency "React"
   s.dependency "Batch"
-
 end

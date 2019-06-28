@@ -3,8 +3,7 @@
   "version": "4.1.2",
   "description": "React Native integration of Batch.com SDK",
   "homepage": "https://bamlab.github.io/react-native-batch-push",
-  "main": "dist/Batch.js",
-  "types": "dist/Batch.d.ts",
+  "main": "src/Batch.ts",
   "repository": {
     "type": "git",
     "url": "git@github.com:bamlab/react-native-batch-push.git"

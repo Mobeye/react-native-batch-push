@@ -1,4 +1,4 @@
-import { NativeModules } from 'react-native';
+import { NativeModules, Platform } from 'react-native';
 const RNBatch = NativeModules.RNBatch;
 
 export interface IAndroidNotificationTypes {
@@ -17,6 +17,12 @@ export const AndroidNotificationTypes: IAndroidNotificationTypes =
  */
 export const BatchPush = {
   AndroidNotificationTypes,
+
+  refreshToken: (): void => {
+    if (Platform.OS === 'ios') {
+      RNBatch.push_refreshToken();
+    }
+  },
 
   /**
    * Ask iOS users if they want to accept push notifications. Required to be able to push users.

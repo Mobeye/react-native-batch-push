@@ -40,6 +40,11 @@ RCT_EXPORT_METHOD(optOutAndWipeData)
 
 // Push Module
 
+RCT_EXPORT_METHOD(refreshToken)
+{
+    [BatchPush refreshToken];
+}
+
 RCT_EXPORT_METHOD(push_registerForRemoteNotifications)
 {
     [BatchPush registerForRemoteNotifications];
